@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  Touchdown
 //
 //  Created by Marcos Kilmer Pereira de Aquino on 10/06/22.
@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+       FooterView()
+            .padding(.horizontal, 20)
     }
 }
 
