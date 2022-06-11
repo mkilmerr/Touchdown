@@ -48,7 +48,7 @@ struct NavigationView: View {
             }
 
         }
-        .padding()
+       
     }
 }
 
