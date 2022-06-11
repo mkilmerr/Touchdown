@@ -18,10 +18,17 @@ struct HomeView: View {
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
 
-                Spacer()
+                ScrollView(.vertical,showsIndicators: false) {
+                    VStack(spacing: 0){
+                        FeaturedTabView()
+                            .frame(height: UIScreen.main.bounds.height / 3)
+                            .padding(.vertical, 20)
+                        FooterView()
+                            .padding(.horizontal)
+                    }
+                }
 
-                FooterView()
-                    .padding(.horizontal)
+
             }
             .background(Color("ColorBackground").ignoresSafeArea(.all, edges: .all))
         }

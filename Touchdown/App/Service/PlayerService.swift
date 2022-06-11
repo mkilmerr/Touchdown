@@ -11,7 +11,7 @@ class PlayerService {
     private let jsonDecode = JsonDecode()
     private let bundleNetwork = BundleNetwork()
 
-    func fetchPlayers() -> [Player]{
+    func fetchPlayers() -> [Player] {
         let playerData =  bundleNetwork.fetch(with: "player")
         let players: [Player] = jsonDecode.decode(with: playerData)
         return players
