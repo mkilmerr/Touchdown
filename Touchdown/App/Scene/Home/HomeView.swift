@@ -23,7 +23,12 @@ struct HomeView: View {
                         FeaturedTabView()
                             .frame(height: UIScreen.main.bounds.height / 3)
                             .padding(.vertical, 20)
+                        
                         CategoryGridView()
+
+                        ProductGridView()
+                            .padding(.vertical, 20)
+
                         FooterView()
                             .padding(.vertical)
                             .padding(.horizontal)
