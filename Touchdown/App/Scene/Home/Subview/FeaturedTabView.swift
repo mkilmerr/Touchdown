@@ -15,6 +15,7 @@ struct FeaturedTabView: View {
                 FeaturedItemView(player: player)
                     .padding(.top, 10)
                     .padding(.horizontal, 15)
+                    .padding(.bottom, -20)
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
