@@ -13,11 +13,13 @@ struct CategorySectionView: View {
         VStack {
             Spacer()
            Text("Category")
-                .fontWeight(.black)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
                 .font(.footnote)
                 .rotationEffect(Angle(degrees: clockWiseRotation ? 90 : -90))
             Spacer()
         }
+        .background(Color.gray.cornerRadius(12))
     }
 }
 
