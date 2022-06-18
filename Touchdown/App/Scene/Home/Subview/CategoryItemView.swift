@@ -26,8 +26,6 @@ struct CategoryItemView: View {
             }
         })
             .padding()
-            .background(Color.white.cornerRadius(12))
-            .cornerRadius(12)
             .background(
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.gray, lineWidth: 2.0)
