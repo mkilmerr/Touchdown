@@ -25,11 +25,10 @@ struct HomeView: View {
                             .padding(.vertical, 20)
                         CategoryGridView()
                         FooterView()
+                            .padding(.vertical)
                             .padding(.horizontal)
                     }
                 }
-
-
             }
             .background(Color("ColorBackground").ignoresSafeArea(.all, edges: .all))
         }

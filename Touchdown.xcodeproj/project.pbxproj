@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E31D6F4285E5D27001D7B15 /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31D6F3285E5D27001D7B15 /* CategorySectionView.swift */; };
 		9EDD67212854055500DB24B7 /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD67202854055500DB24B7 /* TouchdownApp.swift */; };
 		9EDD67232854055500DB24B7 /* FootertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDD67222854055500DB24B7 /* FootertView.swift */; };
 		9EDD67252854055600DB24B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDD67242854055600DB24B7 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E31D6F3285E5D27001D7B15 /* CategorySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionView.swift; sourceTree = "<group>"; };
 		9EDD671D2854055500DB24B7 /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDD67202854055500DB24B7 /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
 		9EDD67222854055500DB24B7 /* FootertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootertView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				9EFE6E702854D2BA00FB3210 /* FeaturedItemView.swift */,
 				9EFED065285E37A000625B50 /* CategoryItemView.swift */,
 				9EFED067285E3CF600625B50 /* CategoryGridView.swift */,
+				9E31D6F3285E5D27001D7B15 /* CategorySectionView.swift */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				9EDD673C2854125F00DB24B7 /* LogoView.swift in Sources */,
 				9EDD673728540B2B00DB24B7 /* HomeView.swift in Sources */,
+				9E31D6F4285E5D27001D7B15 /* CategorySectionView.swift in Sources */,
 				9EFE6E642854CA1200FB3210 /* Network.swift in Sources */,
 				9EFED068285E3CF600625B50 /* CategoryGridView.swift in Sources */,
 				9EFED062285E35C400625B50 /* CategoryService.swift in Sources */,
