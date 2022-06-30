@@ -10,18 +10,17 @@ import SwiftUI
 struct ProductItemView: View {
     let product: Product
     var body: some View {
-        VStack(alignment: .center, spacing: 10){
+        VStack(alignment: .center, spacing: 6){
             VStack {
                 Button(action: {}) {
                     Image(product.image)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200, height: 200, alignment: .center)
+                        .padding(10)
                 }
             }
-            .background(Color(red: product.color[0], green: product.color[1], blue: product.color[2]))
+            .background(Color(red: product.color[0], green: product.color[1], blue: product.color[2])).cornerRadius(12.0)
 
-            VStack {
                 Text(product.name)
                     .fontWeight(.bold)
                     .font(.system(size: 20, weight: .bold, design: .monospaced))
@@ -31,9 +30,7 @@ struct ProductItemView: View {
                     .font(.footnote)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
-            }
         }
-        .padding(.all, 20)
     }
 }
 

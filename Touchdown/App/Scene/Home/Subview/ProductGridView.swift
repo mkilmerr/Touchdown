@@ -20,14 +20,14 @@ struct ProductGridView: View {
                     Text("Helmet")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.horizontal, 20)
+                        .padding(20)
                     Spacer()
                 }
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10, pinnedViews: []) {
                     ForEach(products) { product in
                         ProductItemView(product: product)}
+                    .padding(15)
                 }
-                .padding(.horizontal, 25)
             }
         }
     }

@@ -27,7 +27,6 @@ struct HomeView: View {
                         CategoryGridView()
 
                         ProductGridView()
-                            .padding(.vertical, 20)
 
                         FooterView()
                             .padding(.vertical)
