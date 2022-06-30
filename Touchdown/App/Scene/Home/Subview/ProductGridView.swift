@@ -18,7 +18,7 @@ struct ProductGridView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 HStack {
                     Text("Helmet")
-                        .font(.system(size: 30))
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.horizontal, 20)
                     Spacer()

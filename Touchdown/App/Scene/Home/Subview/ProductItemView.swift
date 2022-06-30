@@ -19,7 +19,7 @@ struct ProductItemView: View {
                         .frame(width: 200, height: 200, alignment: .center)
                 }
             }
-            .background(Color.blue.cornerRadius(12))
+            .background(Color(red: product.color[0], green: product.color[1], blue: product.color[2]))
 
             VStack {
                 Text(product.name)
