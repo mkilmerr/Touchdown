@@ -16,13 +16,6 @@ struct ProductGridView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10){
             ScrollView(.vertical, showsIndicators: false) {
-                HStack {
-                    Text("Helmet")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .padding(20)
-                    Spacer()
-                }
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10, pinnedViews: []) {
                     ForEach(products) { product in
                         ProductItemView(product: product)}

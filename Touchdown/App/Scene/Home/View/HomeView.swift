@@ -26,8 +26,14 @@ struct HomeView: View {
                         
                         CategoryGridView()
 
+                        TitleGroupView(title: "Helmet")
+
                         ProductGridView()
 
+                        TitleGroupView(title: "Brands")
+
+                        BrandsView()
+                           
                         FooterView()
                             .padding(.vertical)
                             .padding(.horizontal)

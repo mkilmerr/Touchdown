@@ -26,6 +26,7 @@ struct ProductItemView: View {
                     .font(.system(size: 20, weight: .bold, design: .monospaced))
                     .multilineTextAlignment(.center)
                     .frame(width: 200)
+                    .foregroundColor(.black)
                 Text("$\(product.price)")
                     .font(.footnote)
                     .fontWeight(.semibold)
