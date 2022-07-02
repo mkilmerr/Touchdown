@@ -12,13 +12,18 @@ struct DetailView: View {
     var body: some View {
         VStack {
             DetailNavigationSectionView()
-                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .padding()
 
             DetailHeaderView(product: product)
                 .padding()
 
             DetailTopPartView(product: product)
                 .padding()
+                .zIndex(1)
+
+            DetailDescriptionView(product: product)
+                .padding(.top, -105)
+                .zIndex(0)
 
             Spacer()
         }
