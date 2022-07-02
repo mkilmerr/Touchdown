@@ -13,19 +13,22 @@ struct DetailView: View {
         VStack {
             DetailNavigationSectionView()
                 .padding()
+            ScrollView(.vertical, showsIndicators: false) {
+                DetailHeaderView(product: product)
+                    .padding()
 
-            DetailHeaderView(product: product)
-                .padding()
+                DetailTopPartView(product: product)
+                    .padding()
+                    .zIndex(1)
 
-            DetailTopPartView(product: product)
-                .padding()
-                .zIndex(1)
 
-            DetailDescriptionView(product: product)
-                .padding(.top, -105)
-                .zIndex(0)
+                DetailDescriptionView(product: product)
+                    .padding(.top, -105)
+                    .zIndex(0)
 
-            Spacer()
+                Spacer()
+            }
+
         }
         .background(
             Color(red: product.color[0], green: product.color[1], blue: product.color[2])

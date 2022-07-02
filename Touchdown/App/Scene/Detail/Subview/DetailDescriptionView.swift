@@ -10,13 +10,17 @@ import SwiftUI
 struct DetailDescriptionView: View {
     let product: Product
     var body: some View {
-        VStack(alignment: .leading, spacing: 80){
-            Spacer()
+        VStack(alignment: .leading, spacing: 8){
             ScrollView(.vertical, showsIndicators: false) {
+                DetailRatingView()
+                    .padding(.top, 50)
+                    .padding(.bottom, 20)
                 Text(product.description)
                     .multilineTextAlignment(.leading)
                     .font(.body)
                     .foregroundColor(.gray)
+                    .padding()
+                DetailCounterView()
                     .padding()
             }
         }
