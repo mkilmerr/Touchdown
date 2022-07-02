@@ -22,6 +22,7 @@ struct DetailDescriptionView: View {
                     .padding()
                 DetailCounterView()
                     .padding()
+                DetailAddCartView(product: product)
             }
         }
         .background(.white)
