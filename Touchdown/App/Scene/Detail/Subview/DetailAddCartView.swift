@@ -31,7 +31,7 @@ struct DetailAddCartView: View {
 
 struct DetailAddCartView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailAddCartView(product: ProductService().getProducts().first!)
+        DetailAddCartView(product: ProductService.shared.sampleProduct)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -29,7 +29,7 @@ struct DetailHeaderView: View {
 
 struct DetailHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailHeaderView(product: ProductService().getProducts().first!)
+        DetailHeaderView(product: ProductService.shared.sampleProduct)
             .previewLayout(.sizeThatFits)
             .background(.gray)
     }

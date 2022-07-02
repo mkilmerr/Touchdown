@@ -38,6 +38,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(product: ProductService().getProducts().first!)
+        DetailView(product: ProductService.shared.sampleProduct)
     }
 }

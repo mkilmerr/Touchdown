@@ -8,8 +8,14 @@
 import Foundation
 
 class ProductService {
+    static let shared = ProductService()
+
     private let jsonDecode = JsonDecode()
     private let bundleNetwork = BundleNetwork()
+
+    var sampleProduct: Product {
+       return getProducts()[0]
+    }
 
     public func getProducts() -> [Product] {
         let productData =  bundleNetwork.fetch(with: "product")

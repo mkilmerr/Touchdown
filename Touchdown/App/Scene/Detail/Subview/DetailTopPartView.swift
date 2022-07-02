@@ -43,7 +43,7 @@ struct DetailTopPartView: View {
 
 struct DetailTopPartView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailTopPartView(product: ProductService().getProducts().first!)
+        DetailTopPartView(product: ProductService.shared.sampleProduct)
             .previewLayout(.sizeThatFits)
     }
 }
