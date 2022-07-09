@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Shop {
+class Shop: ObservableObject {
     var isShowingProduct: Bool = false
     var productSelected: Product? = nil
 }
