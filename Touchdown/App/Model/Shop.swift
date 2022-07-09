@@ -5,26 +5,29 @@
 //  Created by Marcos Kilmer Pereira de Aquino on 09/07/22.
 //
 
-import Foundation
+import SwiftUI
 
 class Shop: ObservableObject {
 
-    private var isShowingProduct: Bool = false
-    private var productSelected: Product? = nil
-
-    public func verifyIfProductDetailIsShowing() -> Bool {
-        return isShowingProduct && productSelected != nil
-    }
+    @Published var isShowingProduct: Bool = false
+    @Published var productSelected: Product? = nil
 
     public func setProduct(_ product: Product) {
         productSelected = product
+    }
+
+    public func getProduct() -> Product {
+        guard let productSelected = productSelected else {
+            return Product(id: 0, name: "", image: "", price: 0, description: "", color: [0])
+        }
+        return productSelected
     }
 
     public func showProduct() {
         isShowingProduct = true
     }
 
-    public func hideProcut() {
+    public func hideProduct() {
         isShowingProduct = false
     }
 }

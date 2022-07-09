@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProductGridView: View {
+
+    @EnvironmentObject var shop: Shop
+
     private var gridLayout: [GridItem] {
         return Array(repeating: GridItem(.flexible(), spacing: 50, alignment: .center), count: 2)
     }
@@ -18,7 +21,9 @@ struct ProductGridView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10, pinnedViews: []) {
                     ForEach(products) { product in
-                        ProductItemView(product: product)}
+                        ProductItemView(product: product)
+                            .environmentObject(shop)
+                    }
                     .padding(15)
                 }
             }

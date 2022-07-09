@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ProductItemView: View {
+
+    @EnvironmentObject var shop: Shop
+
     let product: Product
+
+
+    private func showProductDetail() {
+        withAnimation(.easeOut) {
+            shop.setProduct(product)
+            shop.showProduct()
+        }
+    }
+
     var body: some View {
-        VStack(alignment: .center, spacing: 6){
+        VStack(alignment: .center, spacing: 6) {
             VStack {
-                Button(action: {}) {
+                Button(action: { showProductDetail() }) {
                     Image(product.image)
                         .resizable()
                         .scaledToFit()
@@ -31,6 +43,9 @@ struct ProductItemView: View {
                     .font(.footnote)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
+        }
+        .onTapGesture {
+            showProductDetail()
         }
     }
 }

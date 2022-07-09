@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct DetailView: View {
+
+    @EnvironmentObject var shop: Shop
+
     let product: Product
+
     var body: some View {
         VStack {
             DetailNavigationSectionView()
+                .environmentObject(shop)
                 .padding()
             ScrollView(.vertical, showsIndicators: false) {
                 DetailHeaderView(product: product)
