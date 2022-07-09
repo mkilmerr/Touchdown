@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationView: View {
+struct ProductNavigationView: View {
     // MARK: -  PROPERTIES
     @State var isAnimated: Bool = false
     // MARK: - CONTENT
@@ -54,7 +54,7 @@ struct NavigationView: View {
 
 struct NavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView()
+        ProductNavigationView()
             .previewLayout(.sizeThatFits)
     }
 }

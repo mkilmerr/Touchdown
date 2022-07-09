@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0){
-                NavigationView()
+                ProductNavigationView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
