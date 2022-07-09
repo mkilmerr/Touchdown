@@ -8,6 +8,23 @@
 import Foundation
 
 class Shop: ObservableObject {
-    var isShowingProduct: Bool = false
-    var productSelected: Product? = nil
+
+    private var isShowingProduct: Bool = false
+    private var productSelected: Product? = nil
+
+    public func verifyIfProductDetailIsShowing() -> Bool {
+        return isShowingProduct && productSelected != nil
+    }
+
+    public func setProduct(_ product: Product) {
+        productSelected = product
+    }
+
+    public func showProduct() {
+        isShowingProduct = true
+    }
+
+    public func hideProcut() {
+        isShowingProduct = false
+    }
 }

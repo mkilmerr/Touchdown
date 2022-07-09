@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var shop: Shop
+
     var body: some View {
         ZStack {
             VStack(spacing: 0){
